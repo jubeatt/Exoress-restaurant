@@ -22,19 +22,19 @@
         <input type="hidden" name="id" value="<%= prize.id %>">
         <div class="form__input-block">
           <div class="form__text">名稱</div>
-          <input class="form__input" type="text" name="name" value="<%= prize.name %>">
+          <input class="form__input" type="text" name="name" placeholder="頭獎..." value="<%= prize.name %>">
         </div>
         <div class="form__input-block">
           <div class="form__text">敘述</div>
-          <input class="form__input" type="text" name="description" value="<%= prize.description %>">
+          <input class="form__input" type="text" name="description" placeholder="PlayStation 5 遊戲主機一台..." value="<%= prize.description %>">
         </div>
         <div class="form__input-block">
           <div class="form__text">圖片</div>
-          <input class="form__input" type="text" name="image" value="<%= prize.imageUrl %>">
+          <input class="form__input" type="text" name="image" placeholder="請輸入圖片網址" value="<%= prize.imageUrl %>">
         </div>
         <div class="form__input-block">
           <div class="form__text">權重</div>
-          <input class="form__input" type="text" name="weight" value="<%= prize.weight %>">
+          <input class="form__input" type="text" name="weight" placeholder="請輸入整數" value="<%= prize.weight %>">
         </div>
         <button class="button">送出</button>
       </form>

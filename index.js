@@ -3,6 +3,8 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const app = express();
 const port = process.env.PORT || 3000;
+require('dotenv').config();
+
 const apiController = require('./controllers/apiController')
 const pageController = require('./controllers/pageController')
 const adminController = require('./controllers/adminController')
@@ -14,7 +16,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session({
-  secret: 'keyboard cat',
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true,
 }))
