@@ -1,5 +1,7 @@
 /* 基本樣式 */
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -25,7 +27,6 @@ a {
   background-color: #ff7286;
   color: white;
 }
-
 
 /* 共通樣式 */
 .heading {
@@ -195,10 +196,6 @@ a {
   }
 }
 
-
-
-
-
 /* 介紹區塊（首頁） */
 .intro {
   padding: 50px 15px;
@@ -210,7 +207,7 @@ a {
   line-height: 2;
   text-align: center;
 }
-.intro__button{
+.intro__button {
   display: block;
   width: 300px;
   border-radius: 10px;
@@ -225,10 +222,10 @@ a {
   transform: scale(1.1);
 }
 .intro__button--green {
-  background-color: #a8e8e1 ;
+  background-color: #a8e8e1;
 }
 .intro__button--yellow {
-  background-color: #f9f9b5 ;
+  background-color: #f9f9b5;
 }
 .intro__button--pink {
   background-color: #f9b5b9;
@@ -253,22 +250,21 @@ a {
   }
 }
 
-
 /* 橫幅圖片（首頁） */
 .banner {
   display: flex;
   min-height: calc(100vh - 297px);
   height: 600px;
-  background-image: url('../img/bg.jpg');
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
   position: relative;
 }
 .banner--admin {
-  background-image: url('../img/admin.jpg');
+  background-image: url("../img/admin.jpg");
 }
 .banner__title {
   margin: auto;
@@ -316,7 +312,7 @@ textarea.form__input {
   min-width: 0;
   padding: 10px;
 }
-.form__input:focus{
+.form__input:focus {
   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
   outline: 0;
 }
@@ -327,9 +323,6 @@ textarea.form__input {
 .form .button {
   margin: 30px auto 0 auto;
 }
-
-
-
 
 /* 互動視窗（抽獎頁面） */
 .modal::-webkit-scrollbar {
@@ -369,8 +362,8 @@ textarea.form__input {
 }
 .description-block {
   display: flex;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding: 20px 0
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
 }
 .description-block:last-child .description-block__heading {
   word-spacing: 2em;
@@ -405,8 +398,6 @@ textarea.form__input {
 .result .button {
   max-width: 350px;
 }
-
-
 
 /* 菜單區塊（首頁） */
 .menu {
@@ -473,7 +464,6 @@ textarea.form__input {
   padding: 50px 15px;
 }
 
-
 /* FAQ 區塊（常見問題） */
 .faq {
   padding: 80px 20px;
@@ -493,21 +483,20 @@ textarea.form__input {
   cursor: pointer;
   counter-increment: order;
 }
-.faq__item--hide  .faq__description {
+.faq__item--hide .faq__description {
   display: none;
 }
 .faq__heading {
   font-weight: normal;
 }
 .faq__heading::before {
-  content: 'Q' counter(order) ':';
+  content: "Q" counter(order) ":";
   position: absolute;
   top: 1em;
   left: 0;
   display: inline-block;
   font-size: 24px;
   color: #70b282;
-
 }
 .faq__description {
   line-height: 1.4;
@@ -541,7 +530,7 @@ textarea.form__input {
   text-align: center;
   margin-bottom: 10px;
 }
-.prize__image > img{
+.prize__image > img {
   width: 100%;
   vertical-align: middle;
 }
@@ -575,7 +564,7 @@ textarea.form__input {
   .prize__image > img {
     max-width: 400px;
   }
-  .prize__number {  
+  .prize__number {
     display: flex;
     flex-direction: column;
     justify-content: center;

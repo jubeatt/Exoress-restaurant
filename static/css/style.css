@@ -1,5 +1,7 @@
 /* 基本樣式 */
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -23,7 +25,6 @@ a {
   background-color: #ff7286;
   color: white;
 }
-
 
 /* 共通樣式 */
 .heading {
@@ -137,10 +138,6 @@ a {
   }
 }
 
-
-
-
-
 /* 介紹區塊（首頁） */
 .intro {
   padding: 50px 15px;
@@ -152,7 +149,7 @@ a {
   line-height: 2;
   text-align: center;
 }
-.intro__button{
+.intro__button {
   display: block;
   width: 300px;
   border-radius: 10px;
@@ -167,10 +164,10 @@ a {
   transform: scale(1.1);
 }
 .intro__button--green {
-  background-color: #a8e8e1 ;
+  background-color: #a8e8e1;
 }
 .intro__button--yellow {
-  background-color: #f9f9b5 ;
+  background-color: #f9f9b5;
 }
 .intro__button:nth-child(2) {
   margin-top: 20px;
@@ -192,16 +189,15 @@ a {
   }
 }
 
-
 /* 橫幅圖片（首頁） */
 .banner {
   display: flex;
-  height: 600px; 
-  background-image: url('../img/bg.jpg');
+  height: 600px;
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
   position: relative;
 }
@@ -210,8 +206,6 @@ a {
   color: white;
   font-size: 60px;
 }
-
-
 
 /* 互動視窗（抽獎頁面） */
 .modal::-webkit-scrollbar {
@@ -251,8 +245,8 @@ a {
 }
 .description-block {
   display: flex;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding: 20px 0
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
 }
 .description-block:last-child .description-block__heading {
   word-spacing: 2em;
@@ -277,8 +271,6 @@ a {
   font-size: 36px;
   margin-bottom: 48px;
 }
-
-
 
 /* 菜單區塊（首頁） */
 .menu {
@@ -345,7 +337,6 @@ a {
   padding: 50px 15px;
 }
 
-
 /* FAQ 區塊（常見問題） */
 .faq {
   padding: 80px 20px;
@@ -364,21 +355,20 @@ a {
   cursor: pointer;
   counter-increment: order;
 }
-.faq__item--hide  .faq__description {
+.faq__item--hide .faq__description {
   display: none;
 }
 .faq__heading {
   font-weight: normal;
 }
 .faq__heading::before {
-  content: 'Q' counter(order) ':';
+  content: "Q" counter(order) ":";
   position: absolute;
   top: 1em;
   left: 0;
   display: inline-block;
   font-size: 24px;
   color: #70b282;
-
 }
 .faq__description {
   line-height: 1.4;
