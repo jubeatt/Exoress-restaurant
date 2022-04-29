@@ -49,7 +49,7 @@
 
 ### 登入
 
-![login](l./preview-imgs/ogin.gif)
+![login](./preview-imgs/login.gif)
 
 ### 抽獎
 
